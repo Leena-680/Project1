@@ -26,9 +26,9 @@ dropoff_latitude - the latitude where the meter was disengaged
 run following command in git bash to install geopy library
 pip install geopy
 
-#DataCleanup.ipynb
+# DataCleanup.ipynb
 Developer Adam Faisal
-# Execute this file before any other code file
+#Execute this file before any other code file
 This code reads data from uber.csv file. It uses geopy library to get distance between pickup and dropoff locations. It removes data from year 2008, removes records where longitude and latitude are 0. Output is saved as uber_data_processed.csv
 
 project1_pma_code.ipynb
