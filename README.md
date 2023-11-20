@@ -23,10 +23,13 @@ pickup_latitude - the latitude where the meter was engaged
 dropoff_longitude - the longitude where the meter was disengaged
 dropoff_latitude - the latitude where the meter was disengaged
 
-We have used geoapify route planner api to calculate road distance for each API. After data cleaning output is saved as uber_data_processed.csv under resources folder.
+run following command in git bash to install geopy library
+pip install geopy
 
-#Adam code cleaning file name
-#Add description
+#DataCleanup.ipynb
+Developer Adam Faisal
+# Execute this file before any other code file
+This code reads data from uber.csv file. It uses geopy library to get distance between pickup and dropoff locations. It removes data from year 2008, removes records where longitude and latitude are 0. Output is saved as uber_data_processed.csv
 
 project1_pma_code.ipynb
 Developer - Patricia de Assis
@@ -57,7 +60,7 @@ Identifying Peak Usage Day: The study sought to determine the most frequently ch
 Fare Classification:Average, maximum, and standard fares were classified to provide insights into the pricing dynamics during different time periods. This classification aimed to uncover variations in fare structures and understand how they relate to user demand.
 ![image](output-2.png)
 
-
+FareAnalysis.ipynb
 Developer - Adam Faisal 
 
 The bar plot depicting the average fare amount over distance intervals is crucial for unraveling Uber's pricing dynamics. This visualization offers a comprehensive overview of how average fares fluctuate across various road distance brackets. By discerning trends within these intervals, it becomes possible to identify patterns in pricing strategy. Anomalies or significant variations in average fares can be flagged, prompting further investigation into potential pricing disparities. This insight-driven approach aids in making informed decisions about optimizing fare structures, ensuring competitiveness, and aligning pricing with user expectations.
